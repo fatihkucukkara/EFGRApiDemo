@@ -50,7 +50,8 @@ namespace EFGRApiDemo.Dal.Repositories
             Entities.Add(entity);
             //_context.Set<T>().Add(entity);
 
-            var id = _context.SaveChanges();
+            var id =_context.SaveChanges();
+
             return id;
         }
         public void Insert(IEnumerable<T> entities)
